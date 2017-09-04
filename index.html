@@ -9,7 +9,8 @@
   </head>
 
   <body>
-    <div id = "MenuBar"></div>
+  <div id = "PRELOGIN">
+    <div id = "MenuBar"><h1 class = "title" style="float:left; left:20%; margin:0;"> StudyNote</h1></div>
 
     <div id = "TopBox">
 
@@ -38,6 +39,10 @@
                 function onSignIn(googleUser) {
                   var profile = googleUser.getBasicProfile();
                   console.log(profile.getName());
+                  var name = profile.getName();
+                  document.getElementById("PRELOGIN").style.height = 0;
+                  document.getElementById("USERFRONTPAGE").style.height = auto;
+                  document.getElementById("UsernameReplace").innerHTML = name;
                 }
               </script>
             </form>
@@ -85,6 +90,21 @@
       <br><br><br>
       <h2 class = "subtitle"><i>Web Design by Ed Chen</i></h2>
     </div>
+  </div>
+
+  <div id = "USERFRONTPAGE">
+    <div id = "TopBox">
+
+      <div id = "Positioner1">
+        <h1 class = "title" id = "UsernameReplace"> Name</h1>
+        <h2 class = "subtitle"> Welcome to the Community </h2>
+        <br><br>
+      </div>
+      <div id = "Positioner2">
+        <img src = "assets/arrow.png" id = "expand">
+      </div>
+    </div>
+  </div>
 
   </body>
 
