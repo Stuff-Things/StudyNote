@@ -75,7 +75,7 @@ label {
   left: 50%;
 }
 
-.g-signin2 {
+#gsignin {
   position: absolute;
   top: 67.5%;
   left: 65%;
