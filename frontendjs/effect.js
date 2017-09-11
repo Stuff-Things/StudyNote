@@ -28,3 +28,10 @@ document.addEventListener('DOMContentLoaded',function(event){
   }
   StartTextAnimation(0);
 });
+
+var modal = document.getElementById('loginmodal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
