@@ -1,0 +1,33 @@
+<div id = "USERFRONTPAGE">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+
+  document.getElementById("UsernameReplace").innerHTML = name;
+  if (name == "Ed Chen") {
+    document.getElementById("Subtitle2").innerHTML = "You need to work on this ._.";
+  }
+  if (name == "Nicholas Tang") {
+    document.getElementById("Subtitle2").innerHTML = "Hello MetalButt how are u doing today ;-;";
+  }
+
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+  </script>
+  <div id = "TopBox">
+
+    <div id = "Positioner1">
+      <h1 class = "title" id = "UsernameReplace"> Name</h1>
+      <h2 class = "subtitle" id = "Subtitle2"> Welcome to the Community </h2>
+      <br><br>
+      <a href="#" onclick="signOut();">Sign out</a>
+    </div>
+    <div id = "Positioner2">
+      <img src = "assets/arrow.png" id = "expand">
+    </div>
+  </div>
+
+</div>
