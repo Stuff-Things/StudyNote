@@ -1,22 +1,25 @@
 <html>
 
   <head>
-      <link rel = "stylesheet" type = "text/css" href="css.css">
-      <link rel="icon" href="http://www.artfido.com/avatar/8989/1444759704_1341627_profile_picture_display.png">
-      <title> StudyNotes </title>
+      <link rel = "stylesheet" type = "text/css" href="css/design.css">
+      <link rel = "stylesheet" type = "text/css" href="css/background.css">
+      <link rel = "stylesheet" type = "text/css" href="css/text.css">
+
       <script src="https://apis.google.com/js/platform.js" async defer></script>
       <meta name="google-signin-client_id" content="760109618003-of1l9b52c7cmqhfnk2tnrk3l7k6jqm1f.apps.googleusercontent.com">
+
+      <link rel="icon" href="http://www.artfido.com/avatar/8989/1444759704_1341627_profile_picture_display.png">
+      <title> StudyNotes </title>
+
+
   </head>
 
   <body>
   <div id = "PRELOGIN">
     <div id = "MenuBar"><h1 class = "title" style="float:left; left:20%; margin:0;"> StudyNote</h1></div>
-
     <div id = "TopBox">
-
       <div id = "Positioner1">
         <h1 class = "title"> Study</h1> <h1 class = "title" id = "typewriter"> Note </h1>
-        <script src= "frontendjs/titleanimation.js"></script>
         <h2 class = "subtitle"> an online community of note-takers </h2>
         <br><br>
         <div id = "buttons">
@@ -35,33 +38,8 @@
               <button type = "submit" class = "btninit" id ="loginmodalsubmit" >Submit</button>
               <div id = "divideline"></div>
               <div id = "gsignin"><div class="g-signin2" data-onsuccess="onSignIn"></div></div>
-              <script>
-                function onSignIn(googleUser) {
-                  var profile = googleUser.getBasicProfile();
-                  console.log(profile.getName());
-                  var name = profile.getName();
-                  document.getElementById("PRELOGIN").style.height = "0";
-                  document.getElementById("USERFRONTPAGE").style.height = "100%";
-                  document.getElementById("UsernameReplace").innerHTML = name;
-                  if (name == "Ed Chen") {
-                    document.getElementById("Subtitle2").innerHTML = "You need to work on this ._.";
-                  }
-                  if (name == "Nicholas Tang") {
-                    document.getElementById("Subtitle2").innerHTML = "Hello MetalButt how are u doing today ;-;";
-                  }
-                }
-              </script>
             </form>
           </div>
-          <script>
-            var modal = document.getElementById('loginmodal');
-            window.onclick = function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            }
-          </script>
-
         </div>
       </div>
       <div id = "Positioner2">
@@ -111,7 +89,8 @@
       </div>
     </div>
   </div>
-
+  <script src= "frontendjs/effect.js"></script>
+  <script src= "frontendjs/signin.js"></script>
   </body>
 
 </html>

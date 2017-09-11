@@ -1,0 +1,81 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto');
+@import url('http://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+
+
+.ExHeader{
+  float: left;
+}
+.ExTitle {
+  text-align: center;
+}
+
+i {
+  font-size: calc(1vw + 1vh);
+}
+label {
+  font-size: calc(0.8vw + 0.8vh);
+  color: white;
+  font-family: 'Anonymous Pro';
+}
+
+
+h1.title {
+  font-family: 'Roboto', sans-serif;
+  color: #cccccc;
+  font-size: calc(1.85vw + 1.85vh);
+  margin-bottom: 0;
+  display:inline;
+}
+span.titleanimation {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+h2 {
+  font-family: 'Anonymous Pro';
+  color: #a5a5a5;
+  text-align: center;
+}
+h2.subtitle {
+  font-size: calc(0.9vw + 0.9vh);
+  margin-top: 0%;
+}
+h2.description {
+  position: relative;
+  display: block;
+  border: solid black 1px;
+  padding: 1% 1% 1% 1%;
+  width:60%;
+  height: auto;
+  margin: 2.5% 20% 0% 20%;
+  font-size: calc(0.7vw + 0.7vh);
+}
+h2.leftdescription {
+  position:absolute;
+  display: block;
+  border: solid black 1px;
+  padding: 1% 1% 1% 1%;
+  width: 25%;
+  margin: 2.5% 0% 0% 20%;
+  height: 50%;
+  font-size: calc(0.7vw + 0.7vh);
+  overflow:hidden;
+}
+#rightdescription {
+  position: absolute;
+  display: block;
+  border: solid black 1px;
+  padding: 1% 1% 1% 1%;
+  width: 25%;
+  margin: 2.5% 20% 0% 55%;
+  height: 50%;
+  overflow: scroll;
+}

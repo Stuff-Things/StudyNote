@@ -1,0 +1,73 @@
+#USERFRONTPAGE{
+  height:0;
+  overflow: hidden;
+}
+#PRELOGIN{
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  overflow: auto;
+  height: 100%;
+  position: relative;
+}
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+
+#MenuBar {
+  position: fixed;
+  width: 100%;
+  height: 8%;
+  z-index: 1;
+  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/dark-triangles.png') fixed repeat 0 0;
+  -webkit-animation: slide 20s linear infinite;
+}
+#TopBox {
+  position:relative;
+  /*background-color: rgba(10,10,10,0.75);*/
+  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/dark-triangles.png') fixed repeat 0 0;
+  width: 100%;
+  top: 0px;
+  height: 100%;
+  -webkit-animation: slide 20s linear infinite;
+  z-index: 2;
+}
+@-webkit-keyframes slide {
+  from {background-position: 0 0; }
+  to {background-position: 500px 0; }
+}
+#InfoBox {
+  position:relative;
+  background-color: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  z-index: 0;
+  overflow: scroll;
+}
+#AboutBox {
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 30%;
+  z-index: 1;
+}
+
+
+
+#Positioner1 {
+  position: relative;
+  display: block;
+  top: 30%;
+  text-align: center;
+}
+#Positioner2 {
+  position: absolute;
+  top: 95%;
+  width: 100%;
+}
