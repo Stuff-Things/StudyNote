@@ -50,12 +50,12 @@ html {
   overflow: scroll;
 }
 #AboutBox {
-  background-color: black;
   width: 100%;
   margin: 0;
   padding: 0;
   height: 30%;
   z-index: 1;
+  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/dark-triangles.png') fixed repeat 0 0;
 }
 
 
